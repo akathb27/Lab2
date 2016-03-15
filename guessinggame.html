@@ -30,12 +30,12 @@
   <script type="text/javascript">
   var username = prompt("Welcome! Who is visiting this page?");
   alert("Hello " + username + "! " + "I hope you enjoy Abby's page!");
-  var guess = 0;
+  var guessCorrect = 0;
 
   var sistersName = "Maggie";
   var guessOne = prompt("What is Abby's sister's name?");
   console.log("Ask the user what Abby's sister's name is.");
-  var nameCorrect = (guessOne == sistersName);
+  var nameCorrect = (guessOne.toLowerCase() == sistersName.toLowerCase());
   if(nameCorrect){
     message = "Correct! Abby's sister's name is Maggie!";
     guessCorrect += 1;
@@ -48,7 +48,7 @@
   var livedIn = "Salem";
   var guessTwo = prompt("What city was Abby raised in?");
   console.log("Ask user what city Abby was raised in.");
-  var cityCorrect = (livedIn == guessTwo);
+  var cityCorrect = (livedIn.toLowerCase() == guessTwo.toLowerCase());
   if (cityCorrect){
     message = "Correct! She was raised in Salem!";
     guessCorrect += 1;
@@ -61,7 +61,7 @@
   var haveDog = "Yes";
   var guessThree = prompt("Does Abby have a dog?");
   console.log("Ask user if Abby has a dog.");
-  var dogCorrect = (haveDog == guessThree);
+  var dogCorrect = (haveDog.toLowerCase() == guessThree.toLowerCase());
   if(dogCorrect){
     message = "You're correct! Abby does have a dog!";
     guessCorrect += 1;
@@ -81,17 +81,19 @@
     message = "Your selection is too high.";
   } else {
     message = "Your selection is too low.";
-  }
+}
   console.log("Reponding to the number that the user entered.");
   alert(message);
 
   console.log("Check number of correct answers");
   if (guessCorrect == 4){
-    alert("Great Job! You got 100%!");
-  } else if (guessCorrect == 3) {
-    alert("You got 75%.");
-  } else if(guessCorrect == 2){
-    alert("")
+    alert("Great Job! You got 4 correct!");
+  } else if (guessCorrect == 3){
+    alert("You got 3 correct!");
+  } else if (guessCorrect == 2){
+    alert("You got 2 correct.");
+  } else {
+    alert("You did not pass.");
   }
 
   </script>
