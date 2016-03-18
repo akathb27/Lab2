@@ -2,6 +2,18 @@
 <html>
   <head>
     <title>Hello World!</title>
+    <style>
+    body {
+      font-family: cursive;;
+      background-color: lightgrey;
+      font-size: 17px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 43px;
+    }
+
+    </style>
   </head>
   <body>
     <h1>All About Abby!</h1>
@@ -27,60 +39,33 @@
       </ol>
     </p>
 
-  <script type="text/javascript">
-  var username = prompt("Welcome! Who is visiting this page?");
-  alert("Hello " + username + "! " + "I hope you enjoy Abby's page!");
-
-  var sistersName = "Maggie";
-  var guessOne = prompt("What is Abby's sister's name?");
-  console.log("Ask the user what Abby's sister's name is.");
-  var nameCorrect = (guessOne == sistersName);
-  if(nameCorrect){
-    message = "Correct! Abby's sister's name is Maggie!";
-  } else {
-    message = "That is not correct.";
-  }
-  console.log("Response to question about sister's name acknowledged.")
-  alert(message);
+    <a href="https://github.com/rikkihansen/guessingGame">My partners repository!</a>
 
 
-  var livedIn = "Salem";
-  var guessTwo = prompt("What city was Abby raised in?");
-  console.log("Ask user what city Abby was raised in.");
-  var cityCorrect = (livedIn == guessTwo);
-  if (cityCorrect){
-    message = "Correct! She was raised in Salem!";
-  } else {
-    message = "Sorry. That is incorrect.";
-  }
-  console.log("Response to city she lived in question.");
-  alert(message);
+<table border="1" width="600">
+  <tr>
+    <th colspan="2"><strong>Results</strong></th>
+  </tr>
+  <tr>
+    <td>Right</td>
+    <td>Wrong</td>
+  </tr>
+  <tr>
+    <td id="oneR">&nbsp;</td>
+    <td id="oneW">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="twoR">&nbsp;</td>
+    <td id="twoW">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="threeR">&nbsp;</td>
+    <td id="threeW">&nbsp;</td>
+  </tr>
 
-  var haveDog = "Yes";
-  var guessThree = prompt("Does Abby have a dog?");
-  console.log("Ask user if Abby has a dog.");
-  var dogCorrect = (haveDog == guessThree);
-  if(dogCorrect){
-    message = "You're correct! Abby does have a dog!";
-  } else {
-    message = "Sorry. That is incorrect.";
-  }
-  console.log("Response to whether or not Abby has a dog.");
-  alert(message);
+</table>
 
-  var myNumber = 7;
-  var guessFour = parseInt(prompt("Pick and enter a number between 1 and 10."));
-  console.log("Ask user to select and enter a number between 1-10.");
-  if(guessFour == myNumber){
-    message = "Your selection is the same as mine!";
-  } else if (guessFour > myNumber){
-    message = "Your selection is too high.";
-  } else {
-    message = "Your selection is too low.";
-  }
-  console.log("Reponding to the number that the user entered.");
-  alert(message);
 
-  </script>
+  <script type="text/javascript" src="helloworld.js"></script>
   </body>
 </html>
