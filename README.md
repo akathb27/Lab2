@@ -11,4 +11,4 @@ In this assignment I made the following changes:
 
 March 17, 2016 - Wrote by Rikki
    Today we added functions to Abby's page as well as took away all the alerts, working on the functions was a bit difficult and seemed a bit redundant for this particular page but I could see where functions would come in handy for other projects.
-   Also the whole forking repositories and making a new branch for myself to keep her code in so I am able to save the changes I have made into that branch was hard to understand at first. 
+   Also the whole forking repositories and making a new branch for myself to keep her code in so I am able to save the changes I have made into that branch was hard to understand at first.
